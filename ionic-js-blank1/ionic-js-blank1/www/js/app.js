@@ -33,7 +33,12 @@ angular.module('WOTO', ['ionic'])
         })
 
         .state('tab.main', {
-            url: ''
+            url: '/main',
+            views: {
+                'tab.main': {
+                    templateURL: 'tabs/tab-main.html'
+                }
+            }
         })
 })
 
