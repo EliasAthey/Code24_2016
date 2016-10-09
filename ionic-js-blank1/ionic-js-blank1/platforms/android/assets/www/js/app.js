@@ -28,6 +28,7 @@ angular.module('WOTO', ['ionic', 'WOTO.controllers'])
         //the state for any tabbed view
         .state('tabs', {
             url: '/tabs',
+            abstract: true,
             templateUrl:'tabs/tabs.html'
         })
 
@@ -40,6 +41,19 @@ angular.module('WOTO', ['ionic', 'WOTO.controllers'])
             url: '/main2',
             templateUrl: 'tabs/tab-main2.html'
         })
+
+        .state('sign-in', {
+             url: '/sign',
+             templateUrl: 'tabs/sign-in.html',
+             controller: 'signCtrl'
+         })
+
+        .state('sign-up', {
+            url: '/signup',
+            templateUrl: 'tabs/sign-up.html',
+            controller: 'supCtrl'
+        })
+
 
     $urlRouterProvider.otherwise('/tabs/main1');
 })
