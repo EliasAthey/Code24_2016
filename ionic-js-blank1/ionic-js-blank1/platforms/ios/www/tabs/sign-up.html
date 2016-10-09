@@ -1,0 +1,41 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar-dark">
+        <h1 class="title">
+            Sign Up
+        </h1>
+        <button class="button" ng-click="supModal.hide()">
+            Cancel
+        </button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">First Name</span>
+                <input type="text" placeholder="First Name">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Last Name</span>
+                <input type="text" placeholder="Last Name">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Email</span>
+                <input type="email" placeholder="Email">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="Password">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Student ID</span>
+                <input type="text" placeholder="Student ID (if applicable)">
+            </label>
+        </div>
+        <p>
+            <a class="button button-block button-calm" ng-click="supModal.remove()" href="#/main/yourJobs">Submit</a>
+        </p>
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,41 @@
+﻿<ion-header-bar align-title="center" class="bar-calm">
+    <button class="button" ng-click="profileModal.show()">Profile</button>
+    <h1 class="title">
+        Home
+    </h1>
+    <button class="button icon ion-plus" ng-click="postJobModal.show()"></button>
+</ion-header-bar>
+<ion-tabs class="tabs-icon-top tabs-color-active-light." title="Main">
+    
+    <ion-tab title="Your Jobs" icon-off="ion-document" icon-on="ion-document-text">
+        <ion-nav-view name="Jobs Posted Students">
+            <ion-content class="padding">
+                <div class="list">
+
+                    <div class="item item-divider">
+                        Accepted Jobs
+                    </div>
+
+                    <a class="item">
+                        "Filled In By Server"
+                    </a>
+                    <div class="item item-divider">
+                        Posted Jobs
+                    </div>
+                    <a class="item">
+                        "Filled In By Server"
+                    </a>
+                    <div class="item item-divider">
+                        Completed Jobs
+                    </div>
+                    <a class="item">
+                        "Filled In By Server"
+                    </a>
+                </div>
+            </ion-content>
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Find-A-Job" icon-off="ion-ios-keypad-outline" icon-on="ion-ios-keypad"></ion-tab>
+
+</ion-tabs>

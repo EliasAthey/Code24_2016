@@ -1,0 +1,24 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar-dark">
+        <h1 class="title">
+            Login
+        </h1>
+        <button class="button" ng-click="loginModal.hide()">
+            Cancel
+        </button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Email</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password">
+            </label>
+        </div>
+        <a class="button button-block button-calm" ng-click="loginModal.remove()" href="#/main/yourJobs">Submit</a>
+
+    </ion-content>
+</ion-modal-view>

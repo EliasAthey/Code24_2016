@@ -1,0 +1,43 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="bar-dark">
+        <h1 class="title">
+            Post A Job
+        </h1>
+        <button class="button" ng-click="postJobModal.hide()">
+            Home
+        </button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" ng-model="first name" placeholder="Job Title">
+            </label>
+            <label class="item item-input">
+                <textarea placeholder="Job Description"></textarea>
+            </label>
+            <label class="item item-input">
+                <input type="text" ng-model="job_price" placeholder="$Job Price">
+            </label>
+            <label class="item item-input">
+                <input type="text" ng-model="address" placeholder="Address">
+            </label>
+            <label class="item item-input">
+                <input type="text" ng-model="time_till_finish" placeholder="Time to Complete">
+            </label>
+            <label class="item item-input">
+                <input type="text" ng-model="date_submitted" placeholder="Date Submitted (mm/dd//yy)">
+            </label>
+            <li class="item item-toggle">
+                Equipment Provided
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="equipment">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <button class="button button-block button-calm" href="#/tab/next1">Post!</button>
+
+        </div>
+    </ion-content>
+</ion-modal-view>
