@@ -1,0 +1,18 @@
+﻿<ion-header-bar align-title="center" class="bar-dark">
+    <button class="button">Logout</button>
+    <h1 class="title">
+        Main View
+    </h1>
+    <button class="button icon ion-gear-a"></button>
+</ion-header-bar>
+<ion-tabs class="tabs-icon-top tabs-color-active-assertive" title="Main">
+
+    <ion-tab title="Your Jobs" icon-off="ion-document" icon-on="ion-document-text" href="#/main/yourJobs">
+        <ion-nav-view name="Jobs Posted"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Find-A-Job" icon-off="ion-ios-keypad-outline" icon-on="ion-ios-keypad" href="#/main/allJobs">
+        <ion-nav-view name="All Jobs"></ion-nav-view>
+    </ion-tab>
+
+</ion-tabs>
