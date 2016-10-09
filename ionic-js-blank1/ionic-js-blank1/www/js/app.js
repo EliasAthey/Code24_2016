@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('WOTO', ['ionic'])
+angular.module('WOTO', ['ionic', 'WOTO.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -25,7 +25,7 @@ angular.module('WOTO', ['ionic'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
-        //the state for what any tabbed view
+        //the state for any tabbed view
         .state('tab', {
             url: '/tab',
             abstract: true,
@@ -35,11 +35,19 @@ angular.module('WOTO', ['ionic'])
         .state('tab.main', {
             url: '/main',
             views: {
-                'tab.main': {
-                    templateURL: 'tabs/tab-main.html'
+                'tab-main': {
+                    templateUrl: 'tabs/tab-main.html',
+                    controller: 'MainCtrl'
                 }
             }
         })
+
+        .state('test', {
+            url: '/test',
+            templateUrl: 'tabs/tab-main.html'
+        })
+
+    $urlRouterProvider.otherwise('/test');
 })
 
 
