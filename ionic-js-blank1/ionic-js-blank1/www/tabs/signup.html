@@ -1,12 +1,4 @@
-﻿<ion-modal-view>
-    <ion-header-bar class="bar-dark">
-        <h1 class="title">
-            Sign Up
-        </h1>
-        <button class="button" ng-click="supModal.hide()">
-            Cancel
-        </button>
-    </ion-header-bar>
+﻿<ion-view view-title="Sign Up">
     <ion-content class="padding">
         <div class="list">
             <label class="item item-input item-floating-label">
@@ -29,13 +21,13 @@
                 <input type="password" placeholder="Password">
             </label>
 
-            <label class="item item-input item-floating-label">
+            <label class="item item-input item floating-label">
                 <span class="input-label">Student ID</span>
-                <input type="text" placeholder="Student ID (if applicable)">
+                <input type="text" placeholder="Student ID">
             </label>
         </div>
         <p>
-            <a class="button button-block" ng-click="supModal.remove()" href="#/main/yourJobs">Submit</a>
+            <a class="button button-block" href="#/tab/next1">Foo</a>
         </p>
     </ion-content>
-</ion-modal-view>
+</ion-view>
