@@ -26,28 +26,22 @@ angular.module('WOTO', ['ionic', 'WOTO.controllers'])
 .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         //the state for any tabbed view
-        .state('tab', {
-            url: '/tab',
-            abstract: true,
-            templateURL: 'tabs/tab.html'
+        .state('tabs', {
+            url: '/tabs',
+            templateUrl:'tabs/tabs.html'
         })
 
-        .state('tab.main', {
-            url: '/main',
-            views: {
-                'tab-main': {
-                    templateUrl: 'tabs/tab-main.html',
-                    controller: 'MainCtrl'
-                }
-            }
+        .state('tabs.main1', {
+            url: '/main1',
+            templateUrl: 'tabs/tab-main1.html'
         })
 
-        .state('test', {
-            url: '/test',
-            templateUrl: 'tabs/tab-main.html'
+        .state('tabs.main2', {
+            url: '/main2',
+            templateUrl: 'tabs/tab-main2.html'
         })
 
-    $urlRouterProvider.otherwise('/test');
+    $urlRouterProvider.otherwise('/tabs/main1');
 })
 
 
