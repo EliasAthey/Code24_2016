@@ -34,7 +34,3 @@
         $scope.supModal = modal;
     });
 })
-
-.controller('swipeCtrl', function ($scope) {
-    $scope.swipeToAllJobs()
-})
