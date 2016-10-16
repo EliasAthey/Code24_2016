@@ -38,14 +38,22 @@ var app_start = angular.module('WOTO', ['ionic', 'WOTO.controllers'])
 
         .state('mainTabs.yourJobs', {
             url: '/yourJobs',
-            templateUrl: 'tabs/main/tab-your-jobs.html',
-            controller: 'MainCtrl'
+            views: {
+                'yourJobs': {
+                    templateUrl: 'tabs/main/your-jobs-student.html',
+                    controller: 'MainCtrl'
+                }
+            }
         })
 
         .state('mainTabs.allJobs', {
             url: '/allJobs',
-            templateUrl: 'tabs/main/tab-all-jobs.html',
-            controller: 'MainCtrl'
+            views: {
+                'allJobs': {
+                    templateUrl: 'tabs/main/tab-all-jobs.html',
+                    controller: 'MainCtrl'
+                }
+            }
         })
 
         .state('start', {
