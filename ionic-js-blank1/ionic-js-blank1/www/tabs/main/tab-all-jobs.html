@@ -1,7 +1,11 @@
 ﻿<ion-view view-title="FindAJob">
     <ion-content class="padding" on-swipe-right="selectTabWithIndex(0)">
-        <h1>
-            All Posted Jobs will be shown here.
-        </h1>
+        <div class="card" ng-repeat="job in jobs">
+            <div class="item item-text-wrap">
+                <h1>{{job.title}}</h1>
+                <h2>Pay: {{job.Pay | currency}}</h2>
+                <h2> Distance To: {{job.Distance}}</h2>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

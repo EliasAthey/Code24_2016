@@ -3,8 +3,8 @@
 .controller('MainCtrl', function ($scope, $ionicModal, $state, $ionicTabsDelegate) {
     //post a job modal
     $ionicModal.fromTemplateUrl('tabs/main/postJob.html', {
-       scope: $scope,
-       state: $state,
+        scope: $scope,
+        state: $state,
         animation: 'slide-in-up'
     }).then(function (modal) {
         $scope.postJobModal = modal;
@@ -23,9 +23,17 @@
     $scope.selectTabWithIndex = function (index) {
         $ionicTabsDelegate.animation = 'slide';
         $ionicTabsDelegate.select(index);
-        
+ 
     }
 
+    $scope.jobs = [
+        {
+            'title':'Lawn mowing needed', 'Pay': '15.00', '(x,y)': '.5 miles'
+        },
+        {
+            'title':'Driveway Clearing', 'Pay': '25.00', '(x,y)': '.7'
+        }
+    ]
 
 })
 
