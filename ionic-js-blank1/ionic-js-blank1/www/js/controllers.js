@@ -23,25 +23,21 @@
     $scope.selectTabWithIndex = function (index) {
         $ionicTabsDelegate.animation = 'slide';
         $ionicTabsDelegate.select(index);
- 
-    }
+
+    };
+
 
     $scope.items = [{
-      title: 'Job Title', 
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      title: 'Shovel Driveway', 
+      text: 'I need a nigga to shovel my driveway.',
+      price: '20',
+      distanceTo: '2',//in miles
     },{
-      title: 'Price',
-      
-    },{
-      title: 'Distance To',
-      
-    },{
-      title: '4',
-      
-    },{
-      title: '5',
-      
-  }];
+      title: 'Mow Lawn',
+      text: 'I need a nigga to mow my lawn.',
+      price: '10',
+      distanceTo: '1',//in miles
+    }];
 
   /*
    * if given group is the selected group, deselect it
