@@ -1,11 +1,38 @@
-﻿<ion-view view-title="FindAJob">
-    <ion-content class="padding" on-swipe-right="selectTabWithIndex(0)">
-        <div class="card" ng-repeat="job in jobs">
-            <div class="item item-text-wrap">
-                <h1>{{job.title}}</h1>
-                <h2>Pay: {{job.Pay | currency}}</h2>
-                <h2> Distance To: {{job.Distance}}</h2>
-            </div>
-        </div>
+﻿<html ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Ionic Expand</title>
+
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+
+</head>
+
+<body ng-controller="MyCtrl">
+
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Ionic Item Expand</h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+        <ion-list>
+
+            <ion-item ng-repeat="item in items" class="item item-text-wrap">
+                <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
+                    <h2>{{ item.title }}</h2>
+                    <p>{{ item.text }}</p>
+                </div>
+                <div ng-click="toggleItem(item)" class="item-expand-footer">
+                    <i ng-class="isItemShown(item) ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
+                    {{ isItemShown(item) ? 'Less' : 'More' }}
+                </div>
+            </ion-item>
+
+        </ion-list>
+
     </ion-content>
-</ion-view>
+
+</body>
+</html>
