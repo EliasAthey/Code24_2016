@@ -54,6 +54,11 @@
     return $scope.shownItem === item;
   };
 
+
+  $scope.shortText = function (text, num) {
+      return (text.length > num) ? text.substr(0, num - 1) + '...' : text;
+  }
+
 })
 
 .controller('startCtrl', function ($scope, $ionicModal) {

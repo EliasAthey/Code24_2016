@@ -4,15 +4,14 @@
         <ion-list>
 
             <ion-item ng-repeat="item in items" class="item item-text-wrap">
-                <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
+                <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'"
+                     ng-click="toggleItem(item)">
                     <h2>{{ item.title }}</h2>
-                    <p>{{ item.text }}</p>
                     <p>{{ item.price | currency }}</p>
                     <p>{{ item.distanceTo | number }}</p>
-                </div>
-                <div ng-click="toggleItem(item)" class="item-expand-footer">
-                    <i ng-class="isItemShown(item) ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
-                    {{ isItemShown(item) ? 'Less' : 'More' }}
+                    <p>{{ isItemShown(item) ? shortText(item.text, item.text.length) : shortText(item.text, 93)}}</p>
+                    <p ng-show="!isItemShown(item)">(Tap to show more)</p>
+                    <p ng-show="isItemShown(item)">(Tap to hide)</p>
                 </div>
             </ion-item>
 
