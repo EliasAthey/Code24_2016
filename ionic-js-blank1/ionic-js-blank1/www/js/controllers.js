@@ -29,14 +29,14 @@
 
     $scope.items = [{
       title: 'Shovel Driveway', 
-      text: 'I need a nigga to shovel my driveway.',
+      text: 'I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. I need a nigga to shovel my driveway. ',
       price: '20',
-      distanceTo: '2',//in miles
+      distanceTo: '2.9',//in miles
     },{
       title: 'Mow Lawn',
-      text: 'I need a nigga to mow my lawn.',
+      text: 'I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. ',
       price: '10',
-      distanceTo: '1',//in miles
+      distanceTo: '1.43',//in miles
     }];
 
   /*

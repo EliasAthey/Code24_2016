@@ -52,9 +52,6 @@ var app_start = angular.module('WOTO', ['ionic', 'WOTO.controllers'])
                 'allJobs': {
                     templateUrl: 'tabs/main/tab-all-jobs.html',
                     controller: 'MainCtrl'
-                },
-                'allJobsDetails': {
-                    
                 }
             }
         })

@@ -7,8 +7,8 @@
                 <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
                     <h2>{{ item.title }}</h2>
                     <p>{{ item.text }}</p>
-                    <p>{{ item.price }}</p>
-                    <p>{{ item.distanceTo }}</p>
+                    <p>{{ item.price | currency }}</p>
+                    <p>{{ item.distanceTo | number }}</p>
                 </div>
                 <div ng-click="toggleItem(item)" class="item-expand-footer">
                     <i ng-class="isItemShown(item) ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
