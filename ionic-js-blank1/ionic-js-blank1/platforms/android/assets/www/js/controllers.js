@@ -61,7 +61,7 @@
 
 })
 
-.controller('startCtrl', function ($scope, $ionicModal) {
+.controller('startCtrl', function ($scope, $ionicModal, $ionicPopup) {
    
     $ionicModal.fromTemplateUrl('tabs/sign-up.html', {
         scope: $scope,
@@ -70,11 +70,9 @@
         $scope.supModal = modal;
     });
 
-    $scope.email = $("#email").val();
-    $scope.password = $("#password").val();
 
-    $scope.login = function (email, password) {
-        //send username and passwaord to server
-        alert(email + ' ' + password);
+    $scope.login = function () {
+        //send email and password to server here using:
+        //email.value     password.value
     }
 })
