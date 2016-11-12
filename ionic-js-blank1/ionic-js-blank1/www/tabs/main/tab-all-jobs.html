@@ -1,5 +1,5 @@
 ﻿<ion-view name="All Jobs">
-   <ion-content>
+   <ion-content class="padding" on-swipe-right="selectTabWithIndex(0)">
 
         <ion-list>
 
@@ -7,11 +7,11 @@
                 <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'"
                      ng-click="toggleItem(item)">
                     <h2>{{ item.title }}</h2>
-                    <p>{{ item.price | currency }}</p>
-                    <p>{{ item.distanceTo | number }}</p>
+                    <h3>Paying: {{ item.price | currency }}</h3>
+                    <h3>Distance: {{ item.distanceTo | number }} miles</h3>
                     <p>{{ isItemShown(item) ? shortText(item.text, item.text.length) : shortText(item.text, 93)}}</p>
-                    <p ng-show="!isItemShown(item)">(Tap to show more)</p>
-                    <p ng-show="isItemShown(item)">(Tap to hide)</p>
+                    <h5 ng-show="!isItemShown(item)">(Tap to show more)</h5>
+                    <h5 ng-show="isItemShown(item)">(Tap to hide)</h5>
                 </div>
             </ion-item>
 
