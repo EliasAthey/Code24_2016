@@ -44,7 +44,6 @@
    * else, select the given group
    */
     $scope.profiles = [{
-        id: profiles.indexOf(this),
         name: 'Bob Sagit',
         email: 'collinfeight5@gmail.com',
         payment: '',
