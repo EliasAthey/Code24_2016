@@ -8,20 +8,16 @@
         </button>
     </ion-header-bar>
      <ion-content class="padding">
-        <html>
-        <body>
-            <h1><b>Bob Ross</b></h1>
-            <img src="http://az616578.vo.msecnd.net/files/2016/07/07/6360352413285937212005895955_bobbbb.jpg" style="width:25%; height: 20%" />
+      <img src="http://az616578.vo.msecnd.net/files/2016/07/07/6360352413285937212005895955_bobbbb.jpg" style="width:25%; height: 20%" />
+         <ion-item ng-repeat="profile in profiles" class="item item-text-wrap">
+          <h1>{{profile.Name}}</h1>
+           <div class="buttons">
+            <button class="button icon-right ion-chevron-right button-calm">{{profile.account}}</button>
+            <button class="button icon-right ion-cehvron-right button-calm">{{profile.payment}}</button>
+           </div>
 
-            <div class="Profile">
-                <ol>
-                    <li>Reputation:<br></li>
-                    <li>Completed Jobs:<br></li>
-                    <li>Date Joined:<br></li>
-                </ol>
-            </div>
-            <button class="button button-full button-assertive">Logout</button>
-     </body>
-    </html>
+         </ion-item>
+ <button class="button button-full button-assertive">Logout</button>
+
 </ion-content>
 </ion-modal-view>

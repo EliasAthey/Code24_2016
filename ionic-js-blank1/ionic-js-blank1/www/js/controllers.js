@@ -34,7 +34,7 @@
       distanceTo: '2.9',//in miles
     },{
       title: 'Mow Lawn',
-      text: 'I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. ',
+      text: 'I need a someone to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. I need a nigga to mow my lawn. ',
       price: '10',
       distanceTo: '1.43',//in miles
     }];
@@ -43,6 +43,12 @@
    * if given group is the selected group, deselect it
    * else, select the given group
    */
+    $scope.profiles = [{
+        id: profiles.indexOf(this),
+        name: 'Bob Sagit',
+        email: 'collinfeight5@gmail.com',
+        payment: '',
+    }];
   $scope.toggleItem= function(item) {
     if ($scope.isItemShown(item)) {
       $scope.shownItem = null;
