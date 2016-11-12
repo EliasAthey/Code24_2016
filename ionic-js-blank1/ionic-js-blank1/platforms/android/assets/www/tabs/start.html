@@ -2,8 +2,19 @@
     <ion-content class="padding">
         <h1 style="font-size:50px; font-family:fantasy; text-align:center; color:deepskyblue">Welcome to Woto</h1>
         <div class="buttons">
-            <button class="button button-block button-stable" ng-click="loginModal.show()">Login</button>
-            <button class="button button-block button-dark" ng-click="supModal.show()">Sign Up</button> 
+            <!--<button class="button button-block button-stable" ng-click="loginModal.show()">Login</button>-->
+            <button class="button button-block button-dark" ng-click="supModal.show()">Sign Up</button>
+            <a class="button button-block button-stable" ng-click="login(email, password)" href=#/main/yourJobs>Login</a> 
+        </div>
+        <div class="list">
+            <label class="item item-input" id="email">
+                <span class="input-label">Email</span>
+                <input type="email">
+            </label>
+            <label class="item item-input" id="password">
+                <span class="input-label">Password</span>
+                <input type="password">
+            </label>
         </div>
     </ion-content>
 </ion-view>

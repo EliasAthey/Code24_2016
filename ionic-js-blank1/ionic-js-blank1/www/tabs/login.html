@@ -12,7 +12,7 @@
         <div class="list">
             <label class="item item-input">
                 <span class="input-label">Email</span>
-                <input type="text">
+                <input type="email">
             </label>
             <label class="item item-input">
                 <span class="input-label">Password</span>
@@ -22,79 +22,3 @@
         <a class="button button-block button-calm" ng-click="loginModal.hide()" href="#/main/yourJobs">Submit</a>
      </ion-content>
 </ion-modal-view>
-
-<!--<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <link href="../lib/ionic/css/ionic.css" rel="stylesheet">
-    <script src="../lib/ionic/js/ionic.bundle.js"></script>
-
-    <title>Sign Up</title>
-
-    <link href="../css/style.css" rel="stylesheet">
-
-    <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
-    <script src="../js/controller.js"></script>
-    <script>
-
-				var config = {
-					apiKey: "AIzaSyCHR-0k19eg0OlsVrbXd8rOcSuTthnkRxA",
-					authDomain: "jobr-145820.firebaseapp.com",
-					databaseURL: "https://jobr-145820.firebaseio.com",
-					storageBucket: "jobr-145820.appspot.com",
-					messagingSenderId: "162266239494"
-				};
-				firebase.initializeApp(config);
-				var database = firebase.database();
-
-				angular.module('login', [])
-				.controller('MainCtrl', function ($scope) {
-
-					$scope.login = function() {
-						var email = $scope.email;
-						var password = $scope.password;
-
-						var superFail = false;
-						firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) { superfail = true; });
-						if (superFail) {
-							alert("Invalid credentials or network error.");
-							return;
-						}
-
-						loginModal.remove();
-						window.location = '/main/yourJobs';
-					};
-				});
-
-    </script>
-</head>
-<body ng-app="login" ng-controller="MainCtrl">
-    <ion-modal-view view-title="Log In">
-        <ion-header-bar class="bar-dark">
-            <h1 class="title">
-                Log In
-            </h1>
-            <button class="button" ng-click="loginModal.hide()">
-                Cancel
-            </button>
-        </ion-header-bar>
-        <ion-content class="padding">
-            <div class="list">
-                <label class="item item-input">
-                    <span class="input-label">Email</span>
-                    <input type="text" ng-model="email" id="email" placeholder="Email" autofocus>
-                </label>
-                <label class="item item-input">
-                    <span class="input-label">Password</span>
-                    <input type="password" ng-model="password" id="password" placeholder="password">
-                </label>
-            </div>
-            <div><button class="button button-block button-calm" id="login" ng-click="login()">Submit</button></div>
-        </ion-content>
-    </ion-modal-view>
-</body>
-</html>-->

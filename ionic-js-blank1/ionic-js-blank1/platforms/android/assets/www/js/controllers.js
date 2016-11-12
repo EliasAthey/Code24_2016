@@ -54,7 +54,7 @@
     return $scope.shownItem === item;
   };
 
-
+  //shortens the text of the posted jobs
   $scope.shortText = function (text, num) {
       return (text.length > num) ? text.substr(0, num - 1) + '...' : text;
   }
@@ -62,17 +62,19 @@
 })
 
 .controller('startCtrl', function ($scope, $ionicModal) {
-    $ionicModal.fromTemplateUrl('tabs/login.html', {
-        scope: $scope,
-        animation: 'slide-in-up'
-    }).then(function (modal) {
-        $scope.loginModal = modal;
-    });
-
+   
     $ionicModal.fromTemplateUrl('tabs/sign-up.html', {
         scope: $scope,
         animation: 'slide-in-up'
     }).then(function (modal) {
         $scope.supModal = modal;
     });
+
+    $scope.email = $("#email").val();
+    $scope.password = $("#password").val();
+
+    $scope.login = function (email, password) {
+        //send username and passwaord to server
+        alert(email + ' ' + password);
+    }
 })
